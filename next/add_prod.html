@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <title>Ajouter un produit - G-PROD</title>
+</head>
+<body>
+    <div class="container m-3">
+        <div>
+            <h1>Ajouter un produi - G-PROD</h1>
+        </div> 
+        <br><br>
+        <div class="row mx-5 justify-content-center">
+            <div class="col-md-6">
+                <form action="add_prod.php" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                      <label for="nom">Nom produit :</label>
+                      <input type="text" class="form-control" id="produit" name="produit" required>
+                    </div>
+              
+                    <div class="form-group">
+                      <label for="prenom">Quantité :</label>
+                      <input type="number" class="form-control" id="quantité" name="quantité" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="prenom">Prix :</label>
+                        <input type="number" step="0.01" class="form-control" id="prix" name="prix" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="prenom">Description :</label>
+                        <input type="text" class="form-control" id="description" name="description" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="prenom">Photo :</label>
+                        <input type="file" class="form-control" id="image" name="image" accept="image/*" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="prenom">Statut :</label>
+                        <input type="text" class="form-control" id="statut" name="statut" required>
+                    </div>
+              
+                    <button type="submit" class="btn btn-primary btn-block">Inscription</button><br>
+                  </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
